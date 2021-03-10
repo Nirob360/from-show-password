@@ -1,0 +1,175 @@
+/* 
+
+
+
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+ /* ************** header css ********* */ 
+.header-area{
+    background-color: #050536;
+    height: 95px;
+
+    .container{
+        .row{
+            nav{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+
+                .logo-area{
+                    width: 20%;
+                    display: flex;
+                    justify-content: space-around;
+                    
+                    align-items: center;
+                   i{
+                       font-size: 40px;
+                   }
+                }
+                .main-menu{
+                    width: 80%;
+                    text-align: center;
+                    margin-bottom: 0;
+                    .nav-item{
+                        list-style: none;
+                        display: inline-block;
+                        
+                        .nav-link{
+                            font-size: 22px;
+                            font-weight: 600;
+                            color: #fff;
+                        }
+                    }
+
+                    .dropdown{
+                        position: relative;                        
+                            &::after{
+                                position: absolute;
+                                font-family: "Font Awesome 5 Free";
+                                 font-weight: 900; 
+                                 content: "\f078";
+                                 font-size: 15px;
+                                 margin-left: 5px;       
+                                 color: #fff; 
+                                 right: -5px;      
+                                 top: 15px;              
+                        }
+
+                        .submenu{
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            min-width: 220px;
+                            min-height: 180px;
+                            background: #f3f3f3;
+                            padding:  0 20px;
+                            text-align: initial;
+                            .nav-item{
+                                display: block;
+                                margin: 0;
+                                padding: 0;
+
+                                .nav-link{
+                                    padding: 0;
+                                    margin: 0;
+                                    color: black;
+                                }
+                            }
+                           
+                            
+                            .dropdown{
+                                &::after{
+                                    color: black;
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+.from-section{
+    margin-top: 200px;
+
+.container{
+    .row{
+
+        form{
+
+            .password-wrapper{                
+
+               span{
+                    position: absolute;
+                    right: 8px;
+                    top: 50%;
+                    transform: translateY(  -50%);
+                    cursor: pointer;
+                    
+                    transition:all  .3s !important; 
+
+                    i{
+                        
+                        right: 8px;
+                        top: 50%;    
+                        
+                        color: #000000; 
+                        transition: .3s;
+                    visibility: hidden;
+                    opacity: 0; 
+
+                    }
+
+                    .hide-btn::before{
+                        
+                           
+                        right: 8px;
+                        top: 50%;
+                            font-family: "Font Awesome 5 Free";
+                             font-weight: 900; 
+                             content: "\f070";
+                             color: #ff0000;
+                             
+                             
+                        
+                    }
+                    
+                }
+
+
+                input:valid ~ span i{
+                   visibility: visible;
+                   opacity: 1;
+                }
+            }
+
+            button{
+                padding: 6px 20px;
+                background-color: orange;
+                color: #fff;
+                font-size: 25px;
+                font-weight: 700;
+                border: none;
+                margin-top: 25px;
+
+            }
+        }
+    }
+}
+
+
+}

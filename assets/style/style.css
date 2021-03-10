@@ -1,0 +1,156 @@
+/* 
+
+
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ************** header css ********* */
+.header-area {
+  background-color: #050536;
+  height: 95px;
+}
+
+.header-area .container .row nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-area .container .row nav .logo-area {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-area .container .row nav .logo-area i {
+  font-size: 40px;
+}
+
+.header-area .container .row nav .main-menu {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.header-area .container .row nav .main-menu .nav-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-area .container .row nav .main-menu .nav-item .nav-link {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header-area .container .row nav .main-menu .dropdown {
+  position: relative;
+}
+
+.header-area .container .row nav .main-menu .dropdown::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  font-size: 15px;
+  margin-left: 5px;
+  color: #fff;
+  right: -5px;
+  top: 15px;
+}
+
+.header-area .container .row nav .main-menu .dropdown .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  min-height: 180px;
+  background: #f3f3f3;
+  padding: 0 20px;
+  text-align: initial;
+}
+
+.header-area .container .row nav .main-menu .dropdown .submenu .nav-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.header-area .container .row nav .main-menu .dropdown .submenu .nav-item .nav-link {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.header-area .container .row nav .main-menu .dropdown .submenu .dropdown::after {
+  color: black;
+}
+
+.from-section {
+  margin-top: 200px;
+}
+
+.from-section .container .row form .password-wrapper span {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: all  .3s !important;
+  transition: all  .3s !important;
+}
+
+.from-section .container .row form .password-wrapper span i {
+  right: 8px;
+  top: 50%;
+  color: #000000;
+  -webkit-transition: .3s;
+  transition: .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.from-section .container .row form .password-wrapper span .hide-btn::before {
+  right: 8px;
+  top: 50%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f070";
+  color: #ff0000;
+}
+
+.from-section .container .row form .password-wrapper input:valid ~ span i {
+  visibility: visible;
+  opacity: 1;
+}
+
+.from-section .container .row form button {
+  padding: 6px 20px;
+  background-color: orange;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  border: none;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=style.css.map */
